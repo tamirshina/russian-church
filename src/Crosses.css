@@ -1,0 +1,53 @@
+#greekCross{ 
+	 left: 659px; 
+	 top: 705px; 
+	 position: absolute; 
+	 width: 244px;
+	 height: 226px;
+} 
+#CRCross{ 
+	 left: 394px; 
+	 top: 703px; 
+	 position: absolute; 
+	 width: 245px;
+	 height: 226px;
+} 
+#jeruCross{ 
+	 left: 141px; 
+	 top: 706px; 
+	 position: absolute; 
+	 width: 247px;
+	 height: 228px;
+} 
+
+#patCross{ 
+	 left: 658px; 
+	 top: 455px; 
+	 position: absolute; 
+	 width: 243px;
+	 height: 230px;
+} 
+
+#byzCross{ 
+	 left: 400px; 
+	 top: 458px; 
+	 position: absolute; 
+	 width: 243px;
+	 height: 228px;
+} 
+
+#sibirCross{ 
+	 left: 146px; 
+	 top: 456px; 
+	 position: absolute; 
+	 width: 240px;
+	 height: 225px;
+} 
+
+#russianCross{ 
+	 left: 392px; 
+	 top: 98px; 
+	 position: absolute; 
+	 width: 243px;
+	 height: 331px;
+} 
