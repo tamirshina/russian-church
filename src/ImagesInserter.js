@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import sibirCross from './assets/19-SiberianCross.png';
 import byzCross from './assets/20-ByzantineCross.png';
 import russianCross from './assets/18-RussianCross.png';
@@ -9,17 +9,26 @@ import patCross from './assets/21-PatriarchCross.png';
 import './Crosses.css';
 
 
-function ImagesInserter ({changeType}){
+function ImagesInserter ({setTypeShowInfo}){
+
+  const [activeImg, setActiveImg] = useState();
+
+  function setActive(e){
+    setActiveImg(e.currentTarget.id);
+  }
+
+
+
  
   return (
           <div>
-            <img id='sibirCross' onClick={changeType} src={sibirCross} alt='someonesImage' className='raspotinImg'></img>
-            <img id='byzCross' onClick={changeType} src={byzCross} alt='someonesImage' className='koslevImg'></img>
-            <img id='russianCross' onClick={changeType} src={russianCross} alt='someonesImage' className='bailyImg'></img>
-            <img id='jeruCross' onClick={changeType} src={jeruCross} alt='someonesImage' className='pandovImg'></img>
-            <img id='CRCross' onClick={changeType} src={CRCross} alt='someonesImage' className='shipImg'></img>
-            <img id='greekCross' onClick={changeType} src={greekCross} alt='someonesImage' className='rapinImg'></img>
-            <img id='patCross' onClick={changeType} src={patCross} alt='someonesImage' className='arsenyImg'></img>
+            <img id='sibirCross' onClick={setTypeShowInfo} src={sibirCross} alt='someonesImage' className={activeImg==='sibirCross'?'activeCross':null}></img>
+            <img id='byzCross' onClick={setTypeShowInfo} src={byzCross} alt='someonesImage' className={activeImg==='byzCross'?'activeCross':null}></img>
+            <img id='russianCross' onClick={setTypeShowInfo} src={russianCross} alt='someonesImage' className={activeImg==='russianCross'?'activeCross':null}></img>
+            <img id='jeruCross' onClick={setTypeShowInfo} src={jeruCross} alt='someonesImage' className={activeImg==='jeruCross'?'activeCross':null}></img>
+            <img id='CRCross' onClick={setTypeShowInfo} src={CRCross} alt='someonesImage' className={activeImg==='CRCross'?'activeCross':null}></img>
+            <img id='greekCross' onClick={setTypeShowInfo} src={greekCross} alt='someonesImage' className={activeImg==='greekCross'?'activeCross':null}></img>
+            <img id='patCross' onClick={setTypeShowInfo} src={patCross} alt='someonesImage' className={activeImg==='patCross'?'activeCross':null}></img>
           </div>
         );
     

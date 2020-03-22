@@ -1,27 +1,10 @@
-import React, {useEffect, useContext} from 'react';
-import LangContext from './ChurchContext';
-import ImageInserter from './ImagesInserter';
-import russianChurchEN from './assets/08-russianMaceiaEN.png';
-import russianChurchHe from './assets/07-russian MaceiaHE.png';
-import holyFireImageEN from './assets/13-holyFireEN.png';
-import holyFireImageHe from './assets/12-holyFireHE.png';
-import holydaysPageEN from './assets/15-holydaysEN.png';
-import holydayPageHe from './assets/14-holydaysHE.png';
-import crossesPageEN from './assets/17-crossesEN.png';
-import crossesPageHe from './assets/16-crossesHE.png';
-import heTimeline from './assets/09-timeline.png';
-import enTimeline from './assets/09-timeline.png';
-import ruTimeline from './assets/09-timeline.png';
-import isLeftToRight from './IsLeftToRightFunc';
+import React, {useEffect} from 'react';
+import CrossesPage from './CrossesPage';
 import {timer, removeTimer} from './TimerHundler';
-import TextInserter from './TextInserterParticular';
-import LanguagesButtons from './LanguageButtons';
+import RegularInfo from './RegularInfo';
 import './App.css';
-import HomeBtn from './HomeBtn';
 
-function ParticularInfoPage ({homeBtnLogic, typeOfInfo}){
-
-  const lang = useContext(LangContext).lang;
+function ParticularInfoPage ({typeOfInfo, homeBtnLogic}){
   
   useEffect(
         () => {
@@ -39,38 +22,10 @@ function ParticularInfoPage ({homeBtnLogic, typeOfInfo}){
       }
       return false;
    }
-    function pictureToRender (){
-
-      switch(typeOfInfo){
-
-        case "russianChurch":
-            return isLeftToRight()? russianChurchEN:russianChurchHe;
-        case "holyFire":
-            return isLeftToRight()? holyFireImageEN:holyFireImageHe;            
-        case "holydays":
-            return isLeftToRight()?holydaysPageEN:holydayPageHe; 
-        case "crosses":
-            return isLeftToRight()?crossesPageEN:crossesPageHe; 
-        case "timeLine":
-          if(lang === 'english'){
-            return enTimeline;
-          }if(lang ==='hebrew'){
-            return heTimeline;
-          }else{
-            return ruTimeline;
-          }
-        default:
-          return russianChurchEN;
-    }
-  }
  
   return (
         <>
-            <img src={pictureToRender()} alt='backgroundImage' className='particularBackGround'></img>
-            <LanguagesButtons />
-            <HomeBtn homeBtnLogic={homeBtnLogic} />
-            <TextInserter typeOfInfo={typeOfInfo} homeBtnLogic={homeBtnLogic}/>
-            {isCrosses()?<ImageInserter />:null}
+            {isCrosses()?<CrossesPage homeBtnLogic={homeBtnLogic} />:<RegularInfo typeOfInfo={typeOfInfo} homeBtnLogic={homeBtnLogic}/>}
         </>
 
         );

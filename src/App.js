@@ -18,6 +18,7 @@ const moveToParticularInfo =(e)=> {
   }  
 }
 const homeBtn =()=> {
+  console.log('bfdhsjfj');
   
   setIsFrontPage(true);
   setIsParticularInfo(false);

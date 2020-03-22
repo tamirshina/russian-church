@@ -11,7 +11,7 @@ import RighToLeftTitle from './RightToLeftTitle';
 import LeftToRightTitle from './LeftToRightTitle';
 import './App.css';
 
-function TextInserterParticular ({typeOfInfo, homeBtnLogic}){
+function TextInserterParticular ({typeOfInfo, homeBtnLogic, isCrosses}){
 
     const lang = useContext(LangContext).lang;
     const textParaEl = useRef(null);
@@ -37,11 +37,11 @@ function TextInserterParticular ({typeOfInfo, homeBtnLogic}){
 
     function infoToInsert (){
 
-        return whichFileToUse().particularInfo[typeOfInfo];  
+        return isCrosses? whichFileToUse().crosses[typeOfInfo]: whichFileToUse().particularInfo[typeOfInfo];  
     }
     function titleToInsert (){
 
-        return whichFileToUse().titles[typeOfInfo];         
+        return isCrosses? whichFileToUse().crossesTitles[typeOfInfo]: whichFileToUse().titles[typeOfInfo];         
     }
     const  scrollAndUpdateDown=()=> {
 
