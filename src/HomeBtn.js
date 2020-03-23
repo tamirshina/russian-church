@@ -1,6 +1,5 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import isLeftToRight from './IsLeftToRightFunc';
+import homeImg from './assets/35-home.png';
 import './App.css';
 
 
@@ -8,7 +7,7 @@ function HomeBtn ({homeBtnLogic}) {
 
     return (
 
-        <button onClick={homeBtnLogic} className={isLeftToRight()?'homeBtn':'rightToLeftHomeBtn'}>Home</button>
+        <img src={homeImg} alt='homeBtn' onClick={homeBtnLogic} className={'homeBtn'}/>
     
     );
   }

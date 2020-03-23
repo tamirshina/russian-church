@@ -50,4 +50,43 @@
 	 position: absolute; 
 	 width: 243px;
 	 height: 331px;
+}
+.crossesTitleEN{
+	position: fixed;
+    right: 27%;
+    top: 16%;
 } 
+.crossesParaEN{
+	font-family: fantasy;
+    position: fixed;
+    right: 15%;
+    top: 27%;
+    width: 25%;
+    line-height: 1.6;
+    height: 42%;
+    overflow: hidden;
+}
+.crossesParaHE{
+	text-align: right;
+    line-height: 1.6;
+    height: 326px;
+    overflow: hidden;
+    font-family: fantasy;
+    position: fixed;
+    top: 25%;
+    right: 9%;
+    width: 30%;
+}
+.crossesTitleHE{
+	position: fixed;
+    right: 8%;
+    top: 16%;
+}
+.crossesPageHeTitle{
+	float: right;
+    margin-right: 9%;
+    margin-bottom: 0%;
+}
+.crossesHeUnderline{
+	margin-left: 26%;
+}

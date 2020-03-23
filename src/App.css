@@ -15,52 +15,44 @@
   right: 10%;
 }
 .langugeDivCss{
-
   position: fixed;
   top: 5%;
   left: 5%;
   display: grid;
   grid-row-gap: 8px;
 }
-.churchFront{
-  height: 200px;
-  width: 200px;
-  z-index: 0;
-}
 .churchOne{
-
   left: -147px; 
   top: 47px; 
-  position: absolute; 
+  position: fixed; 
   width: 728px;
   height: 1091px;
 } 
 .churchTwo{
   left: 486px; 
   top: 133px; 
-  position: absolute; 
+  position: fixed; 
   width: 401px;
   height: 530px;
-  
 }
 .churchThree{
   left: 912px; 
   top: 174px; 
-  position: absolute; 
+  position: fixed; 
   width: 426px;
   height: 340px;
 }
 .churchFour{
   left: 1212px; 
   top: 384px; 
-  position: absolute; 
+  position: fixed; 
   width: 800px;
   height: 585px;
 }
 .churchFive{
   left: 724px; 
   top: 357px; 
-  position: absolute; 
+  position: fixed; 
   width: 443px;
   height: 503px;
 }
@@ -178,8 +170,38 @@
 
 .homeBtn{
   position: fixed;
-  top: 50px;
+  bottom: 15px;
   right: 200px;
-  width: 80px;
-  height: 30px;
+  z-index: 10;
+}
+
+#timelineBackground{
+  width: auto;
+}
+.languagesDiv{
+  position: fixed;
+  display: flex;
+  grid-row-gap: 8px;
+  z-index: 99;
+  bottom: 25px;
+  left: 40px;
+}
+.addMargin{
+  margin-right: 15px;
+}
+.frameCss{
+  position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 11;
+}
+.holydaysContinue{
+  position: fixed;
+  top: 50%;
+  left: 1%;
+}
+.holyTitle{
+  position: fixed;
+  top: 8%;
+  left: 43%;
 }

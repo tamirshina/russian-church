@@ -2,6 +2,8 @@ import React, {useEffect} from 'react';
 import CrossesPage from './CrossesPage';
 import {timer, removeTimer} from './TimerHundler';
 import RegularInfo from './RegularInfo';
+import TimlinePage from './TimelinePage';
+import HolydaysPage from './HolydaysPage';
 import './App.css';
 
 function ParticularInfoPage ({typeOfInfo, homeBtnLogic}){
@@ -15,17 +17,12 @@ function ParticularInfoPage ({typeOfInfo, homeBtnLogic}){
         // eslint-disable-next-line react-hooks/exhaustive-deps
         }, []);
 
-    function isCrosses(){
-
-      if(typeOfInfo==="crosses"){
-         return true;
-      }
-      return false;
-   }
- 
   return (
         <>
-            {isCrosses()?<CrossesPage homeBtnLogic={homeBtnLogic} />:<RegularInfo typeOfInfo={typeOfInfo} homeBtnLogic={homeBtnLogic}/>}
+            {typeOfInfo==='crosses'?<CrossesPage homeBtnLogic={homeBtnLogic} />:null}
+            {typeOfInfo==='timeLine'?<TimlinePage homeBtnLogic={homeBtnLogic} />:null}
+            {typeOfInfo==='holydays'?<HolydaysPage homeBtnLogic={homeBtnLogic} />:null}
+            {typeOfInfo==='russianChurch' || typeOfInfo==='holyFire'?<RegularInfo typeOfInfo={typeOfInfo} homeBtnLogic={homeBtnLogic} />:null}
         </>
 
         );

@@ -16,9 +16,6 @@ function ImagesInserter ({setTypeShowInfo}){
   function setActive(e){
     setActiveImg(e.currentTarget.id);
   }
-
-
-
  
   return (
           <div>

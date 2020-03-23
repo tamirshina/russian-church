@@ -3,8 +3,7 @@ import ImageInserter from './ImagesInserter';
 import crossesImgEN from './assets/17-crossesEN.png';
 import crossesImgHe from './assets/16-crossesHE.png';
 import isLeftToRight from './IsLeftToRightFunc';
-import TextInserter from './TextInserterParticular';
-import LanguagesButtons from './LanguageButtons';
+import TextInserterCrosses from './TextInserterCrosses';
 import './App.css';
 import HomeBtn from './HomeBtn';
 
@@ -19,9 +18,8 @@ function CrossesPage ({homeBtnLogic}){
   return (
         <>
             <img src={isLeftToRight()?crossesImgEN:crossesImgHe} alt='backgroundImage' className='particularBackGround'></img>
-            <LanguagesButtons />
             <HomeBtn homeBtnLogic={homeBtnLogic} />
-            <TextInserter typeOfInfo={typeOfInfo} isCrosses={true}/>
+            <TextInserterCrosses typeOfInfo={typeOfInfo} />
             <ImageInserter setTypeShowInfo={setTypeShowInfo} typeOfInfo={typeOfInfo}/>
         </>
 
