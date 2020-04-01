@@ -1,8 +1,8 @@
 import React from 'react';
-import headerUnderline from './assets/10_Headerunderline.png';
+import headerUnderline from '../assets/10_Headerunderline.png';
 import isLeftToRight from './IsLeftToRightFunc';
-import './App.css';
-import './Crosses.css';
+import '../css/App.css';
+import '../css/Crosses.css';
 
 
 function CrossesTitle ({titleToInsert}){

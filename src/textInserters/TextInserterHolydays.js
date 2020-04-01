@@ -1,11 +1,11 @@
 import React, { useContext, useRef } from 'react';
-import isLeftToRight from './IsLeftToRightFunc';
-import LangContext from './ChurchContext';
+import isLeftToRight from '../fragments/IsLeftToRightFunc';
+import LangContext from '../ChurchContext';
 import russianText from './russianText';
 import englishText from './englishText';
 import hebrewText from './hebrewText';
-import HolydayTitle from './HolyTitle';
-import './App.css';
+import HolydayTitle from '../fragments/HolyTitle';
+import '../css/App.css';
 
 function TextInserterHolydays ({typeOfInfo}){
 

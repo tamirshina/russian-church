@@ -2,6 +2,12 @@
   font-family: titleFont;
   src: url('./VarelaRound-Regular.ttf') format('truetype');
 }
+body, html {
+  height: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 .full-background{
   height: -webkit-fill-available;
   object-fit: fill;
@@ -36,8 +42,8 @@
   height: 530px;
 }
 .churchThree{
-  left: 912px; 
-  top: 174px; 
+  left: 1003px;
+  top: 82px;
   position: fixed; 
   width: 426px;
   height: 340px;
@@ -71,14 +77,15 @@
   height: 30px;
 }
 .heInfoPageTitle{
-  float: right;
-  margin-bottom: 0%;
+  position: relative;
+  left: 40%;
 }
 .titleFont{
   font-family: titleFont;
 }
 .heInfoPageUnderline{
-  float: right;
+  position: fixed;
+    top: 25%;
 }
 .infoTextBoxLeftToRight{
 
@@ -94,13 +101,16 @@
   width: 34%;
   display: grid;
 }
-.textCss{
-    
+.textCss{    
+  position: fixed;
+  top: 25%;
+  height: 555px;
   text-align: right;
   line-height: 1.6;
-  height: 325px;
-  overflow: hidden;
-  font-family: fantasy;
+  white-space: pre-wrap;
+  overflow: scroll;
+  right: 8%;
+  width: 50%;
 }
 .buttomScrollOneHE{
   position: relative;
@@ -160,7 +170,8 @@
   width: 31%;
   line-height: 1.6;
   height: 46%;
-  overflow: hidden;
+  white-space: pre-wrap;
+  overflow: scroll;
 }
 .buttomInfoScroll{
   position: absolute;
@@ -204,4 +215,9 @@
   position: fixed;
   top: 8%;
   left: 43%;
+}
+.titleBoxHeb{
+  position: fixed;
+  top: 20%;
+  right: 12%;
 }

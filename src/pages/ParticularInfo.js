@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import CrossesPage from './CrossesPage';
-import {timer, removeTimer} from './TimerHundler';
+import {timer, removeTimer} from '../TimerHundler';
 import RegularInfo from './RegularInfo';
 import TimlinePage from './TimelinePage';
 import HolydaysPage from './HolydaysPage';
-import './App.css';
+import '../css/App.css';
 
 function ParticularInfoPage ({typeOfInfo, homeBtnLogic}){
   

@@ -1,6 +1,6 @@
 
 import {useContext} from 'react';
-import LangContext from './ChurchContext';
+import LangContext from '../ChurchContext';
 
 
 function IsLeftToRight () {

@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import './App.css';
-import FrontPage from './FrontPage';
-import ParticularInfo from './ParticularInfo';
-import LanguageDiv from './LanguageButtons';
+import './css/App.css';
+import FrontPage from './pages/FrontPage';
+import ParticularInfo from './pages/ParticularInfo';
+import LanguageDiv from './fragments/LanguageButtons';
 
 function App() {
 

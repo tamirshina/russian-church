@@ -1,11 +1,11 @@
 import React, {useContext} from 'react';
-import backgroundImgEN from './assets/06-back.png';
-import LangContext from './ChurchContext';
-import church1pic from './assets/01-trinity.png';
-import church2pic from './assets/02-magdalen.png';
-import church3pic from './assets/03-estrenCross.png';
-import church4pic from './assets/04-ascension.png';
-import church5pic from './assets/05-grosny.png';
+import backgroundImgEN from '../assets/06-back.png';
+import LangContext from '../ChurchContext';
+import church1pic from '../assets/01-trinity.png';
+import church2pic from '../assets/02-magdalen.png';
+import church3pic from '../assets/03-estrenCross.png';
+import church4pic from '../assets/04-ascension.png';
+import church5pic from '../assets/05-grosny.png';
 
 function FrontPage ({moveToParticularInfo}) {
 

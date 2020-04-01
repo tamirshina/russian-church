@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import sibirCross from './assets/19-SiberianCross.png';
-import byzCross from './assets/20-ByzantineCross.png';
-import russianCross from './assets/18-RussianCross.png';
-import jeruCross from './assets/22-JerusalemCross.png';
-import CRCross from './assets/23-ChiRhoCross.png';
-import greekCross from './assets/24-GreekCross.png';
-import patCross from './assets/21-PatriarchCross.png';
-import './Crosses.css';
+import sibirCross from '../assets/19-SiberianCross.png';
+import byzCross from '../assets/20-ByzantineCross.png';
+import russianCross from '../assets/18-RussianCross.png';
+import jeruCross from '../assets/22-JerusalemCross.png';
+import CRCross from '../assets/23-ChiRhoCross.png';
+import greekCross from '../assets/24-GreekCross.png';
+import patCross from '../assets/21-PatriarchCross.png';
+import '../css/Crosses.css';
 
 
 function ImagesInserter ({setTypeShowInfo}){

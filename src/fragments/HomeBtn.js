@@ -1,6 +1,6 @@
 import React from 'react';
-import homeImg from './assets/35-home.png';
-import './App.css';
+import homeImg from '../assets/35-home.png';
+import '../css/App.css';
 
 
 function HomeBtn ({homeBtnLogic}) {
