@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import continueImg from '../assets/26-continue.png';
 import sundayPlamEN from '../assets/27-PalmSundayEN.png';
 import sundayPlamHE from '../assets/28-PalmSundayHE.png';
@@ -12,57 +12,57 @@ import tranformationEN from '../assets/40-TransfigurationEN.png';
 import tranformationHE from '../assets/41-TransfigurationHE.png';
 import isLeftToRight from '../fragments/IsLeftToRightFunc';
 import TextInserterHolydays from '../textInserters/TextInserterHolydays';
-import {timer, removeTimer} from '../TimerHundler';
+import { timer, removeTimer } from '../TimerHundler';
 import '../css/App.css';
 import HomeBtn from '../fragments/HomeBtn';
 
-function HolydaysPage ({homeBtnLogic}){
+function HolydaysPage({ homeBtnLogic }) {
 
     useEffect(
         () => {
-        timer(homeBtnLogic);
+            timer(homeBtnLogic);
 
-        return () => { // Return callback to run on unmount.
-            
-        removeTimer();
-          };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+            return () => { // Return callback to run on unmount.
+
+                removeTimer();
+            };
+            // eslint-disable-next-line react-hooks/exhaustive-deps
         }, []);
 
-  const [typeOfInfo, setTypeOfInfo]=useState(0);
-  const moveFoword = useRef(null);
+    const [typeOfInfo, setTypeOfInfo] = useState(0);
+    const moveFoword = useRef(null);
 
-  const setTypeShowInfo = () => {
-        setTypeOfInfo(typeOfInfo+1);
-  }  
-  const imageToInsert =()=>{
+    const setTypeShowInfo = () => {
+        setTypeOfInfo(typeOfInfo + 1);
+    }
+    const imageToInsert = () => {
 
-      switch (typeOfInfo) {
-        case 0:
-            return isLeftToRight()?sundayPlamEN:sundayPlamHE;
-        case 1:
-            return isLeftToRight()?adventFeastEN:adventFeastHE;
-        case 2:
-            return isLeftToRight()?midsummerEN:midsummerHE;
-        case 3:
-            return isLeftToRight()?selenicaEN:selenicaHE;
-        case 4:
-            return isLeftToRight()?tranformationEN:tranformationHE;
-          default:
-              return sundayPlamEN;
-      }
-  }
- 
-  return (
+        switch (typeOfInfo) {
+            case 0:
+                return isLeftToRight() ? sundayPlamEN : sundayPlamHE;
+            case 1:
+                return isLeftToRight() ? adventFeastEN : adventFeastHE;
+            case 2:
+                return isLeftToRight() ? midsummerEN : midsummerHE;
+            case 3:
+                return isLeftToRight() ? selenicaEN : selenicaHE;
+            case 4:
+                return isLeftToRight() ? tranformationEN : tranformationHE;
+            default:
+                return sundayPlamEN;
+        }
+    }
+
+    return (
         <>
             <img src={imageToInsert()} alt='backgroundImage' className='particularBackGround'></img>
             <HomeBtn homeBtnLogic={homeBtnLogic} />
             <TextInserterHolydays typeOfInfo={typeOfInfo} />
-            <img ref={moveFoword} src={continueImg} onClick={setTypeShowInfo} alt='continue' className='holydaysContinue'/>
+            <img ref={moveFoword} src={continueImg} onClick={setTypeShowInfo} alt='continue' className='holydaysContinue' />
         </>
 
-        );
-    
+    );
+
 }
 
 export default HolydaysPage;
