@@ -28,14 +28,14 @@ body, html {
   grid-row-gap: 8px;
 }
 .churchOne{
-  left: -147px; 
-  top: 47px; 
+  left: -94px;
+  top: -63px;
   position: fixed; 
   width: 728px;
   height: 1091px;
 } 
 .churchTwo{
-  left: 486px; 
+  left: 540px; 
   top: 133px; 
   position: fixed; 
   width: 401px;
@@ -145,8 +145,8 @@ body, html {
 }
 .enInfoTitle{
   position: fixed;
-  left: 2%;
-  top: 14%;
+  left: 4%;
+  top: 21%;
 }
 .frontPageEnTitle{
   margin-left: 21%;
@@ -166,7 +166,7 @@ body, html {
   font-family: fantasy;
   position: fixed;
   left: 8%;
-  top: 33%;
+  top: 30%;
   width: 31%;
   line-height: 1.6;
   height: 46%;
@@ -220,4 +220,17 @@ body, html {
   position: fixed;
   top: 20%;
   right: 12%;
+}
+.scroll-button-container {
+  position: fixed;
+  bottom: 17%;
+  left: 35%;
+}
+.scroll-container-heb{
+  position: fixed;
+  bottom: 17%;
+  right: 52%;
+}
+.left-scroll {
+  margin-right: 20px;
 }

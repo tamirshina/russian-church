@@ -35,7 +35,10 @@
 	 width: 243px;
 	 height: 228px;
 } 
-
+.move{
+	-webkit-transform: translate(200px,-360px);
+	transition-duration        : 0.5s;
+}
 #sibirCross{ 
 	 left: 146px; 
 	 top: 456px; 

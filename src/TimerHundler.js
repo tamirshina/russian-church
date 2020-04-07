@@ -1,12 +1,12 @@
 
 let myFunc;
-export function timer(homeBtnLogic){
+export function timer(homeBtnLogic) {
 
-     myFunc =window.setInterval(() => {
+  myFunc = window.setInterval(() => {
     homeBtnLogic();
-      }, 300000);
+  }, 3000000);
 }
-export function removeTimer(){
+export function removeTimer() {
 
-    window.clearInterval(myFunc);
+  window.clearInterval(myFunc);
 }
