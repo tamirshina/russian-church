@@ -15,7 +15,6 @@ body, html {
 }
 .frontHeadline{
   font-family: titleFont;
-  color: #deb887;
   position: fixed;
   top: 5%;
   right: 10%;
@@ -78,14 +77,14 @@ body, html {
 }
 .heInfoPageTitle{
   position: relative;
-  left: 40%;
 }
 .titleFont{
   font-family: titleFont;
 }
 .heInfoPageUnderline{
   position: fixed;
-    top: 25%;
+  top: 25%;
+  right: 8%;
 }
 .infoTextBoxLeftToRight{
 
@@ -107,10 +106,11 @@ body, html {
   height: 555px;
   text-align: right;
   line-height: 1.6;
+  font-size: 21px;
   white-space: pre-wrap;
   overflow: scroll;
   right: 8%;
-  width: 50%;
+  width: 40%;
 }
 .buttomScrollOneHE{
   position: relative;
@@ -219,7 +219,7 @@ body, html {
 .titleBoxHeb{
   position: fixed;
   top: 20%;
-  right: 12%;
+  right: 8%;
 }
 .scroll-button-container {
   position: fixed;
@@ -229,7 +229,7 @@ body, html {
 .scroll-container-heb{
   position: fixed;
   bottom: 17%;
-  right: 52%;
+  right: 42%;
 }
 .left-scroll {
   margin-right: 20px;

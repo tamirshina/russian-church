@@ -10,7 +10,7 @@ import LeftToRightTitle from '../fragments/LeftToRightTitle';
 import ScrollBtns from "../fragments/ScrollBtns";
 import '../css/App.css';
 
-function TextInserterParticular({ typeOfInfo, homeBtnLogic, isCrosses }) {
+function TextInserterParticular({ typeOfInfo, homeBtnLogic }) {
 
     const lang = useContext(LangContext).lang;
     const textParaEl = useRef(null);
@@ -40,24 +40,22 @@ function TextInserterParticular({ typeOfInfo, homeBtnLogic, isCrosses }) {
 
     function titleToInsert() {
 
-        return isCrosses ? whichFileToUse().crossesTitles[typeOfInfo] : whichFileToUse().titles[typeOfInfo];
+        return whichFileToUse().titles[typeOfInfo];
     }
     const scrollAndUpdateDown = () => {
 
         resetTimer();
         textParaEl.current.scrollTop += 10;
-
     }
 
     const scrollAndUpdateUp = () => {
 
         textParaEl.current.scrollTop -= 10;
-
     }
 
     return (
 
-        <div className={isLeftToRight() ? null : 'textBoxCss'}>
+        <div>
             {isLeftToRight() ?
                 <LeftToRightTitle titleToInsert={titleToInsert()} /> :
                 <RighToLeftTitle titleToInsert={titleToInsert()} />}
