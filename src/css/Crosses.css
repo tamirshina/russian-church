@@ -60,7 +60,7 @@
     top: 16%;
 } 
 .crossesParaEN{
-	font-family: fantasy;
+	font-family: Papyrus;
     position: fixed;
     right: 15%;
     top: 27%;
@@ -74,7 +74,7 @@
     line-height: 1.6;
     height: 326px;
     overflow: hidden;
-    font-family: fantasy;
+    font-family: Papyrus;
     position: fixed;
     top: 25%;
     right: 9%;
