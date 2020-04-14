@@ -13,12 +13,12 @@ function RightToLeftTitle() {
 
     return (
 
-        <div className='front-page-title'>
-            <h1 className='titleFont'>{lang === "hebrew" ? title[2]
+        <div className={isLeftToRight() ? 'front-page-title' : 'front-page-title align-right'} >
+            <h1 className='titleFont front-h1'>{lang === "hebrew" ? title[2]
                 : lang === "english" ? title[0]
                     : title[1]}</h1>
             <img alt='underline' src={isLeftToRight() ? headerUnderline : hebUnderline} className='' />
-        </div>
+        </ div>
     );
 
 }

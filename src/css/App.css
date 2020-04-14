@@ -234,3 +234,16 @@ body, html {
 .left-scroll {
   margin-right: 20px;
 }
+.front-page-title{
+
+  position: fixed;
+  right: 4%;
+  top: 12%;
+  display: inline;
+}
+.front-h1{
+  margin-bottom: 3px;
+}
+.align-right{
+  text-align: right;
+}
