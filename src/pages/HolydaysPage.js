@@ -33,6 +33,10 @@ function HolydaysPage({ homeBtnLogic }) {
     const moveFoword = useRef(null);
 
     const setTypeShowInfo = () => {
+        if (typeOfInfo === 4) {
+            setTypeOfInfo(0);
+            return;
+        }
         setTypeOfInfo(typeOfInfo + 1);
     }
     const imageToInsert = () => {

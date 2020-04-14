@@ -104,7 +104,7 @@ body, html {
   position: fixed;
   top: 25%;
   height: 555px;
-  text-align: right;
+  direction: rtl;
   line-height: 1.6;
   font-size: 21px;
   white-space: pre-wrap;

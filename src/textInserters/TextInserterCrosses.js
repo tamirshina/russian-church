@@ -8,10 +8,12 @@ import CrossesTitle from '../fragments/CrossesTitle';
 import '../css/App.css';
 import '../css/Crosses.css';
 
-function TextInserterCrosses({ typeOfInfo, homeBtnLogic, isCrosses }) {
+function TextInserterCrosses({ typeOfInfo }) {
 
     const lang = useContext(LangContext).lang;
     const textParaEl = useRef(null);
+
+    function createMarkup(str) { return { __html: str } };
 
     function whichFileToUse() {
         if (lang === "hebrew") {
@@ -39,8 +41,7 @@ function TextInserterCrosses({ typeOfInfo, homeBtnLogic, isCrosses }) {
 
         <div className='textBoxCss'>
             <CrossesTitle titleToInsert={titleToInsert()} />
-            <p ref={textParaEl} className={isLeftToRight() ? 'crossesParaEN' : 'crossesParaHE'} id="particularTextBox">
-                {infoToInsert()}
+            <p ref={textParaEl} className={isLeftToRight() ? 'crossesParaEN' : 'crossesParaHE'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(infoToInsert())}>
             </p>
         </div>
     );

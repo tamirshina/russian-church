@@ -15,6 +15,8 @@ function TextInserterParticular({ typeOfInfo, homeBtnLogic }) {
     const lang = useContext(LangContext).lang;
     const textParaEl = useRef(null);
 
+    function createMarkup(str) { return { __html: str } };
+
     function resetTimer() {
         removeTimer();
         timer(homeBtnLogic);
@@ -59,8 +61,7 @@ function TextInserterParticular({ typeOfInfo, homeBtnLogic }) {
             {isLeftToRight() ?
                 <LeftToRightTitle titleToInsert={titleToInsert()} /> :
                 <RighToLeftTitle titleToInsert={titleToInsert()} />}
-            <p ref={textParaEl} className={isLeftToRight() ? 'infoEnText' : 'textCss'} id="particularTextBox">
-                {infoToInsert()}
+            <p ref={textParaEl} className={isLeftToRight() ? 'infoEnText' : 'textCss'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(infoToInsert())}>
             </p>
             <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} />
         </div>

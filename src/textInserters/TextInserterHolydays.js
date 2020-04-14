@@ -13,6 +13,8 @@ function TextInserterHolydays({ typeOfInfo }) {
     const holyday = setHolyday();
     const textParaEl = useRef(null);
 
+    function createMarkup(str) { return { __html: str } };
+
     function setHolyday() {
 
         switch (typeOfInfo) {
@@ -54,8 +56,7 @@ function TextInserterHolydays({ typeOfInfo }) {
     return (
         <div className='textBoxCss'>
             <HolydayTitle titleToInsert={titleToInsert()} />
-            <p ref={textParaEl} className={isLeftToRight() ? 'crossesParaEN' : 'crossesParaHE'} id="particularTextBox">
-                {infoToInsert()}
+            <p ref={textParaEl} className={isLeftToRight() ? 'crossesParaEN' : 'crossesParaHE'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(infoToInsert())}>
             </p>
         </div>
     );
