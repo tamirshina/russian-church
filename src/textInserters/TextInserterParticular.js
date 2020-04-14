@@ -3,7 +3,7 @@ import isLeftToRight from '../fragments/IsLeftToRightFunc';
 import LangContext from '../ChurchContext';
 import russianText from './russianText';
 import englishText from './englishText';
-import hebrewText from './hebrewText';
+import hebrewText from './HebrewText';
 import { timer, removeTimer } from '../TimerHundler';
 import RighToLeftTitle from '../fragments/RightToLeftTitle';
 import LeftToRightTitle from '../fragments/LeftToRightTitle';
@@ -22,7 +22,7 @@ function TextInserterParticular({ typeOfInfo, homeBtnLogic }) {
 
     function whichFileToUse() {
         if (lang === "hebrew") {
-            return JSON.parse(JSON.stringify(hebrewText));
+            return hebrewText;
         }
         if (lang === "english") {
             return JSON.parse(JSON.stringify(englishText));

@@ -3,47 +3,47 @@ import isLeftToRight from '../fragments/IsLeftToRightFunc';
 import LangContext from '../ChurchContext';
 import russianText from './russianText';
 import englishText from './englishText';
-import hebrewText from './hebrewText';
+import hebrewText from './HebrewText';
 import CrossesTitle from '../fragments/CrossesTitle';
 import '../css/App.css';
 import '../css/Crosses.css';
 
-function TextInserterCrosses ({typeOfInfo, homeBtnLogic, isCrosses}){
+function TextInserterCrosses({ typeOfInfo, homeBtnLogic, isCrosses }) {
 
     const lang = useContext(LangContext).lang;
     const textParaEl = useRef(null);
 
-    function whichFileToUse (){
-        if(lang==="hebrew"){
-            return JSON.parse(JSON.stringify(hebrewText));
+    function whichFileToUse() {
+        if (lang === "hebrew") {
+            return hebrewText;
         }
-        if(lang==="english"){
+        if (lang === "english") {
             return JSON.parse(JSON.stringify(englishText));
         }
-        else{
+        else {
             return JSON.parse(JSON.stringify(russianText));
         }
     }
 
-    function infoToInsert (){
+    function infoToInsert() {
 
-        return whichFileToUse().crosses[typeOfInfo];  
+        return whichFileToUse().crosses[typeOfInfo];
     }
-    function titleToInsert (){
+    function titleToInsert() {
 
-        return whichFileToUse().crossesTitles[typeOfInfo];         
+        return whichFileToUse().crossesTitles[typeOfInfo];
     }
 
- 
-  return (
 
-            <div className='textBoxCss'>
-            <CrossesTitle titleToInsert={titleToInsert()}/>
-                <p ref={textParaEl} className={isLeftToRight()?'crossesParaEN':'crossesParaHE'} id="particularTextBox"> 
-                    {infoToInsert()}
-                </p>
-            </div>
-        );
+    return (
+
+        <div className='textBoxCss'>
+            <CrossesTitle titleToInsert={titleToInsert()} />
+            <p ref={textParaEl} className={isLeftToRight() ? 'crossesParaEN' : 'crossesParaHE'} id="particularTextBox">
+                {infoToInsert()}
+            </p>
+        </div>
+    );
 }
 
 export default TextInserterCrosses;
