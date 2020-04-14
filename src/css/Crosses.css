@@ -61,7 +61,8 @@
 } 
 .crossesParaEN{
 	font-family: Papyrus;
-    position: fixed;
+	position: fixed;
+	font-size: 18px;
     right: 15%;
     top: 27%;
     width: 25%;
@@ -72,7 +73,7 @@
 .crossesParaHE{
 	text-align: right;
 	line-height: 1.6;
-	font-size: 24px;
+	font-size: 18px;
     height: 500px;
     overflow: scroll;
     font-family: Papyrus;

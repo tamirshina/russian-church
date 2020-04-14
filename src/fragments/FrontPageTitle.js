@@ -13,7 +13,7 @@ function RightToLeftTitle() {
 
     return (
 
-        <div className={isLeftToRight() ? 'front-page-title' : 'front-page-title align-right'} >
+        <div className={isLeftToRight() ? 'front-page-title' : 'front-page-title'} >
             <h1 className='titleFont front-h1'>{lang === "hebrew" ? title[2]
                 : lang === "english" ? title[0]
                     : title[1]}</h1>

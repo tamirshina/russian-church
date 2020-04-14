@@ -41,18 +41,18 @@ body, html {
   height: 530px;
 }
 .churchThree{
-  left: 1003px;
-  top: 82px;
-  position: fixed; 
-  width: 426px;
-  height: 340px;
+  left: 1042px;
+  top: 239px;
+  position: fixed;
+  width: 342px;
+  height: 276px;
 }
 .churchFour{
-  left: 1212px; 
-  top: 384px; 
-  position: fixed; 
-  width: 800px;
-  height: 585px;
+  right: -74px;
+  top: 422px;
+  position: fixed;
+  width: 757px;
+  height: 536px;
 }
 .churchFive{
   left: 724px; 
@@ -76,15 +76,11 @@ body, html {
   height: 30px;
 }
 .heInfoPageTitle{
-  position: relative;
+  margin-bottom: 0;
 }
 .titleFont{
   font-family: titleFont;
-}
-.heInfoPageUnderline{
-  position: fixed;
-  top: 25%;
-  right: 8%;
+  font-weight: 300;
 }
 .infoTextBoxLeftToRight{
 
@@ -106,7 +102,7 @@ body, html {
   height: 555px;
   direction: rtl;
   line-height: 1.6;
-  font-size: 21px;
+  font-size: 18px;
   white-space: pre-wrap;
   overflow: scroll;
   right: 8%;
@@ -165,6 +161,7 @@ body, html {
 .infoEnText{
   font-family: Papyrus;
   position: fixed;
+  font-size: 18px;
   left: 8%;
   top: 30%;
   width: 31%;
@@ -218,8 +215,9 @@ body, html {
 }
 .titleBoxHeb{
   position: fixed;
-  top: 20%;
+  top: 17%;
   right: 8%;
+  text-align: right;
 }
 .scroll-button-container {
   position: fixed;
@@ -235,15 +233,12 @@ body, html {
   margin-right: 20px;
 }
 .front-page-title{
-
   position: fixed;
   right: 4%;
   top: 12%;
   display: inline;
+  text-align: center;
 }
 .front-h1{
   margin-bottom: 3px;
-}
-.align-right{
-  text-align: right;
 }
