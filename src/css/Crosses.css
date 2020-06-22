@@ -54,34 +54,30 @@
 	 width: 243px;
 	 height: 331px;
 }
-.crossesTitleEN{
+.crosses-text-box-heb{
 	position: fixed;
-    right: 27%;
     top: 16%;
-} 
+    right: 9%;
+    width: 31%;
+    direction: rtl;
+}
+.crosses-text-box-en{
+	position: fixed;
+	top: 16%;
+	right: 7%;
+	width: 34%;
+  }
 .crossesParaEN{
 	font-family: Papyrus;
-	position: fixed;
 	font-size: 18px;
-    right: 15%;
-    top: 27%;
-    width: 25%;
     line-height: 1.6;
-    height: 42%;
     overflow: hidden;
 }
 .crossesParaHE{
-	text-align: right;
 	line-height: 1.6;
 	font-size: 18px;
-    height: 500px;
     overflow: scroll;
     font-family: Papyrus;
-    position: fixed;
-    top: 25%;
-    right: 9%;
-	width: 30%;
-	direction: rtl;
 	white-space: pre-line;
 }
 .crossesTitleHE{

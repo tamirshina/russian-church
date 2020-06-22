@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import headerUnderline from '../assets/10_Headerunderline.png';
-import isLeftToRight from './IsLeftToRightFunc';
+import headerUnderlineEn from '../assets/10-HeaderunderlineEn.png';
+import LangContext from "../ChurchContext";
 import '../css/App.css';
 import '../css/Crosses.css';
 
 
-function CrossesTitle ({titleToInsert}){
+function CrossesTitle({ titleToInsert }) {
+
+    const lang = useContext(LangContext).lang;
+
+    function isLeftToRight() {
+        if (lang === "hebrew") {
+            return false;
+        } else {
+            return true;
+        }
+    }
 
     return (
 
-    <div className={isLeftToRight()?'crossesTitleEN':'crossesTitleHE'}>
-        <h1 className={isLeftToRight()?'titleFont frontPageEnTitle':'titleFont crossesPageHeTitle'}>{titleToInsert}</h1>
-        <img alt='underline' src={headerUnderline} className={isLeftToRight()?'frontPageUnderline':'crossesHeUnderline'}/>
-    </div>
-   );
+        <div>
+            <h1 style={{ marginBottom: "0" }} className={isLeftToRight() ? 'titleFont' : 'titleFont'}>{titleToInsert}</h1>
+            <img alt='underline' src={isLeftToRight() ? headerUnderlineEn : headerUnderline} className={isLeftToRight() ? 'crosses-underline' : 'crossesHeUnderline'} />
+        </div>
+    );
 
 }
 export default CrossesTitle;

@@ -1,7 +1,7 @@
 import React, { useContext, useRef } from 'react';
 import isLeftToRight from '../fragments/IsLeftToRightFunc';
 import LangContext from '../ChurchContext';
-import russianText from './russianText';
+import russianText from './RussianText';
 import englishText from './englishText';
 import hebrewText from './HebrewText';
 import HolydayTitle from '../fragments/HolyTitle';
@@ -40,7 +40,7 @@ function TextInserterHolydays({ typeOfInfo }) {
             return JSON.parse(JSON.stringify(englishText));
         }
         else {
-            return JSON.parse(JSON.stringify(russianText));
+            return russianText;
         }
     }
 

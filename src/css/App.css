@@ -55,11 +55,11 @@ body, html {
   height: 536px;
 }
 .churchFive{
-  left: 724px; 
-  top: 357px; 
-  position: fixed; 
-  width: 443px;
-  height: 503px;
+  left: 757px;
+  top: 357px;
+  position: fixed;
+  width: 300px;
+  height: 453px;
 }
 .particularBackGround{
 
@@ -91,10 +91,9 @@ body, html {
 }
 .textBoxCss{
   position: fixed;
-  top: 7%;
-  right: 4%;
+  top: 16%;
+  right: 7%;
   width: 34%;
-  display: grid;
 }
 .textCss{    
   position: fixed;
@@ -103,7 +102,7 @@ body, html {
   direction: rtl;
   line-height: 1.6;
   font-size: 18px;
-  white-space: pre-wrap;
+  white-space: pre-line;
   overflow: scroll;
   right: 8%;
   width: 40%;
@@ -151,6 +150,10 @@ body, html {
 .frontPageUnderline{
   margin-left: 18%;
 }
+.crosses-underline{
+  width: 500px;
+  height: 10px;
+}
 .topInfoScrollEn{
   visibility: hidden;
   position: fixed;
@@ -164,11 +167,11 @@ body, html {
   font-size: 18px;
   left: 8%;
   top: 30%;
-  width: 31%;
+  width: 51%;
   line-height: 1.6;
   height: 46%;
-  white-space: pre-wrap;
   overflow: scroll;
+  white-space: pre-line;
 }
 .buttomInfoScroll{
   position: absolute;
@@ -210,8 +213,10 @@ body, html {
 }
 .holyTitle{
   position: fixed;
+  width: 698px;
   top: 8%;
-  left: 43%;
+  text-align: center;
+  left: 607px;
 }
 .titleBoxHeb{
   position: fixed;
@@ -222,7 +227,7 @@ body, html {
 .scroll-button-container {
   position: fixed;
   bottom: 17%;
-  left: 35%;
+  left: 55%;
 }
 .scroll-container-heb{
   position: fixed;

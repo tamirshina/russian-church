@@ -1,7 +1,6 @@
 import React, { useContext, useRef } from 'react';
-import isLeftToRight from '../fragments/IsLeftToRightFunc';
 import LangContext from '../ChurchContext';
-import russianText from './russianText';
+import russianText from './RussianText';
 import englishText from './englishText';
 import hebrewText from './HebrewText';
 import CrossesTitle from '../fragments/CrossesTitle';
@@ -13,6 +12,14 @@ function TextInserterCrosses({ typeOfInfo }) {
     const lang = useContext(LangContext).lang;
     const textParaEl = useRef(null);
 
+    function isLeftToRight() {
+        if (lang === "hebrew") {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     function createMarkup(str) { return { __html: str } };
 
     function whichFileToUse() {
@@ -23,7 +30,7 @@ function TextInserterCrosses({ typeOfInfo }) {
             return JSON.parse(JSON.stringify(englishText));
         }
         else {
-            return JSON.parse(JSON.stringify(russianText));
+            return russianText;
         }
     }
 
@@ -39,7 +46,7 @@ function TextInserterCrosses({ typeOfInfo }) {
 
     return (
 
-        <div className='textBoxCss'>
+        <div className={isLeftToRight() ? 'crosses-text-box-en' : 'crosses-text-box-heb'}>
             <CrossesTitle titleToInsert={titleToInsert()} />
             <p ref={textParaEl} className={isLeftToRight() ? 'crossesParaEN' : 'crossesParaHE'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(infoToInsert())}>
             </p>
