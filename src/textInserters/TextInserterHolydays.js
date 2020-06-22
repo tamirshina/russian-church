@@ -54,7 +54,7 @@ function TextInserterHolydays({ typeOfInfo }) {
     }
 
     return (
-        <div className='textBoxCss'>
+        <div className={isLeftToRight() ? 'textBoxCss' : 'holydays-text-box-heb'}>
             <HolydayTitle titleToInsert={titleToInsert()} />
             <p ref={textParaEl} className={isLeftToRight() ? 'crossesParaEN' : 'crossesParaHE'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(infoToInsert())}>
             </p>

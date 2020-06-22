@@ -44,15 +44,15 @@ body, html {
   left: 1042px;
   top: 239px;
   position: fixed;
-  width: 342px;
+  width: 377px;
   height: 276px;
 }
 .churchFour{
   right: -74px;
-  top: 422px;
+  top: 457px;
   position: fixed;
-  width: 757px;
-  height: 536px;
+  width: 723px;
+  height: 508px;
 }
 .churchFive{
   left: 757px;
@@ -91,9 +91,16 @@ body, html {
 }
 .textBoxCss{
   position: fixed;
-  top: 16%;
-  right: 7%;
+  top: 24%;
+  right: 11%;
   width: 34%;
+}
+.holydays-text-box-heb{
+  position: fixed;
+  top: 24%;
+  right: 11%;
+  width: 34%;
+  direction: rtl;
 }
 .textCss{    
   position: fixed;
