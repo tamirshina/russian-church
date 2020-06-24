@@ -18,8 +18,8 @@ function CrossesPage({ homeBtnLogic }) {
 
                         removeTimer();
                   };
-                  // eslint-disable-next-line react-hooks/exhaustive-deps
-            }, []);
+
+            }, [homeBtnLogic]);
 
 
       const [typeOfInfo, setTypeOfInfo] = useState('russianCross');
