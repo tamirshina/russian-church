@@ -2,7 +2,7 @@ import React, { useContext, useRef } from 'react';
 import isLeftToRight from '../fragments/IsLeftToRightFunc';
 import LangContext from '../ChurchContext';
 import russianText from './RussianText';
-import englishText from './englishText';
+import englishText from './EnglishText';
 import hebrewText from './HebrewText';
 import { timer, removeTimer } from '../TimerHundler';
 import RighToLeftTitle from '../fragments/RightToLeftTitle';
@@ -27,7 +27,7 @@ function TextInserterParticular({ typeOfInfo, homeBtnLogic }) {
             return hebrewText;
         }
         if (lang === "english") {
-            return JSON.parse(JSON.stringify(englishText));
+            return englishText;
         }
         else {
             return russianText;

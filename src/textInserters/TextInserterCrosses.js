@@ -1,7 +1,7 @@
 import React, { useContext, useRef } from 'react';
 import LangContext from '../ChurchContext';
 import russianText from './RussianText';
-import englishText from './englishText';
+import englishText from './EnglishText';
 import hebrewText from './HebrewText';
 import CrossesTitle from '../fragments/CrossesTitle';
 import '../css/App.css';
@@ -27,7 +27,7 @@ function TextInserterCrosses({ typeOfInfo }) {
             return hebrewText;
         }
         if (lang === "english") {
-            return JSON.parse(JSON.stringify(englishText));
+            return englishText;
         }
         else {
             return russianText;
