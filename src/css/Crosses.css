@@ -71,7 +71,8 @@
 	font-family: Papyrus;
 	font-size: 18px;
     line-height: 1.6;
-    overflow: hidden;
+	overflow: scroll;
+	white-space: pre-line;
 }
 .crossesParaHE{
 	line-height: 1.6;

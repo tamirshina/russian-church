@@ -12,6 +12,7 @@ body, html {
   height: -webkit-fill-available;
   object-fit: fill;
   width: 100%;
+  margin-bottom: -4px;
 }
 .frontHeadline{
   font-family: titleFont;
@@ -62,10 +63,10 @@ body, html {
   height: 453px;
 }
 .particularBackGround{
-
   height: -webkit-fill-available;
   object-fit: fill;
   width: 100%;
+  margin-bottom: -4px;
 }
 .rightToLeftHomeBtn{
 
@@ -253,4 +254,10 @@ body, html {
 }
 .front-h1{
   margin-bottom: 3px;
+}
+.cross-in-text{
+  width: 200px;
+}
+.cross-in-text-container{
+  display: flex;
 }

@@ -1,4 +1,6 @@
-
+import haloCross from "../assets/43-haloWithGreek.jpg";
+import alpaOmaga from "../assets/45-zaiRho.png";
+import ippoCross from "../assets/44-ippoCross.png";
 const englishText = {
 
     id: "englishText",
@@ -53,13 +55,34 @@ The ceremony and its exact details solidified gradually over time, and a descrip
 `,
     },
     crosses: {
-        sibirCross: `mainly used in medieval art when depicting saints and represents the Holy Trinity. In Orthodox Christian and Byzantine art this cross frequently appears together with the Greek letters “Ο, Ω, Ν”, which stand for the Greek phrase “Ο ΩΝ” pointing to the name God told Moses when he asked him His name next to the burning bush - “I am that I am”. The use of these letters represent Jesus’ divinity.`,
+        sibirCross: `mainly used in medieval art when depicting saints and represents the Holy Trinity. In Orthodox Christian and Byzantine art this cross frequently appears together with the Greek letters “Ο, Ω, Ν”, which stand for the Greek phrase “Ο ΩΝ” pointing to the name God told Moses when he asked him His name next to the burning bush - “I am that I am”. The use of these letters represent Jesus’ divinity.
+    
+
+        <img
+        src=${haloCross}
+        alt="humanitarian buildings"
+        class="humanitarianBuildings"
+      />    `,
         byzCross: `a cross with widened edges that was in commonplace use in the Early Byzantine Empire, which existed for over a thousand years and greatly influenced the course of history in the eastern Mediterranean and southern Europe, as well as contributed to the shaping of the essence in eastern Europe. Orthodox Christianity, which flourished in various regions of eastern Europe was deeply influenced by the Byzantine rite.`,
         russianCross: `symbol of the Russian Orthodox Church, whose origins are traced in 	the Byzantine Empire circa the 6th century. The upper horizontal line stands for the inscription above the cross on which Jesus was crucified written in Hebrew, Greek and Latin “Jesus the Nazarene, King of the Jews”. The lower diagonal line symbolizes good and evil. The upward part of this line represents, according to tradition, the “penitent thief” St. Dismas, who was crucified on Jesus’ right and confessed his sins. The downward part symbolizes the “impenitent thief” Gestas, who was crucified on Jesus’ left and did not confess his sins.`,
         jeruCross: ` also called “five-fold cross”, it consists of a large cross potent in the center surrounded by four smaller Greek crosses, one in each quadrant. This cross was used as the emblem of the Crusader Kingdom of Jerusalem since 1280. The five crosses represent the “Five Wounds of Christ” (one for each piercing wound Jesus suffered during the crucifixion). The four edges symbolize the four corners of the world. Today this cross is used by the Order of the Holy Sepulchre and appears in numerous places in the Christian world.
         The symbol of IOPS combines the chi-rho christogram together with alpha and omega with direct reference to the Greek cross and indirect reference to the Jerusalem cross.`,
         CRCross: `Chi Rho – one of the earliest forms of a christogram – a monogram related to Christianity. It is formed by the combination of the Greek letters chi (X) and rho (P) from the Greek word ΧΡΙΣΤΟΣ (Christos) – Jesus Christ. The symbol of chi rho was extensively used by the founder of the Byzantine Empire, Roman Caesar Constantine, waving in the sky upon his armies’ flags and was gradually preserved as a Christian emblem.
         Chi Rho with Alpha and Omega – Alpha, the first letter of the Greek alphabet and omega the last. As noted in the Book of Revelation, Jesus’ voice is heard by John after Jesus’ death, while he spreads Jesus’ doctrine on the island of Patmos. And as the verse from the Book of Revelation says “I am the Alpha and Omega”.
+
+        <div class="cross-in-text-container">
+
+                <img
+                src=${alpaOmaga}
+                alt="humanitarian buildings"
+                class="cross-in-text"
+                />        
+                <img
+                src=${ippoCross}
+                alt="humanitarian buildings"
+                class="cross-in-text"
+            />
+        </div>
          `,
         greekCross: `possess equal lines and has been in use sinc the 4th century. It was not intended to represent the crucifixion but rather the four cardinal directions and the spread of the message of Christianity to all four directions. Earlier testimonies concerning this cross can be found in the Babylonian Empire, where it represented the Sun God “Shamash”.`,
         patCross: `the upper horizontal line stands for the inscription above the cross on which Jesus was crucified written in Hebrew, Greek and Latin “Jesus the Nazarene, King of the Jews”.`
