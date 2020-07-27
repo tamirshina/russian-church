@@ -47,6 +47,7 @@ body, html {
   position: fixed;
   width: 377px;
   height: 276px;
+  z-index: 2;
 }
 .churchFour{
   right: -74px;
@@ -261,3 +262,15 @@ body, html {
 .cross-in-text-container{
   display: flex;
 }
+.text-jeru-box{
+  position: absolute;
+}
+.text-box-heb{
+  direction: rtl;
+}
+.margin-add-left{
+  margin-left: 15px;
+}
+.margin-add-right{
+  margin-right: 15px;
+  }

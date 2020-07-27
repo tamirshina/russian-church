@@ -118,5 +118,298 @@ The ceremony and its exact details solidified gradually over time, and a descrip
         selenica: "Maslenitsa",
         transformation: "Feast of the Transfiguration"
     },
+    timelinePage: {
+        itemsArray: [
+            {
+                id: 'year33',
+                css: {
+                    width: '32em',
+                    height: '14em',
+                    top: '62%',
+                    left: '3%'
+                },
+                extra: {},
+                info: `Jesus’s crucifixion. Pontius Pilatus was governor of Judea between 26 CE to 36 CE. According to the New Testament Pilatus supervised Jesus’s trial and was the one to order his crucifixion.`
+            },
+            {
+                id: 'year313',
+                css: {
+                    width: '265px',
+                    height: '249px',
+                    top: '8%',
+                    left: '25.5%'
+                }, extra: {},
+                info: `The Edict of Milan (Edictum Mediolanense) ratifies Christianity as a permitted religion.`
+            },
+            {
+                id: 'year325',
+                css: {
+                    width: '21em',
+                    height: '297px',
+                    top: '5%',
+                    left: '42%'
+                },
+                extra: {},
+                info: `Council of Nicaea, the first ecumenical (worldwide) council of Christian leaders. The council was convened in the city of Nicaea in Asia Minor after Roman Emperor Constantine’s initiative in order to reach a consensus and set uniform standards concerning Christianity and christian faith, which was already quite prominent. During the council the christian doctrine was initially formed; among others the Nicene Creed and the observance date of Easter.`
+            },
+            {
+                id: 'year330',
+                css: {
+                    width: '19em',
+                    height: '17em',
+                    top: '63%',
+                    left: '33%'
+                },
+                extra: {},
+                info: `Establishment of the “second Rome” by the Roman Emperor Constantine and its 	appointment as the capital of the East Roman Empire – Constantinople.`
+            },
+            {
+                id: 'Year335',
+                css: {
+                    width: '17em',
+                    height: '6em',
+                    top: '7%',
+                    left: '62%'
+                },
+                extra: {},
+                info: `Erection of the Church of the Holy Sepulchre.`
+            },
+            {
+                id: 'Year638',
+                css: {
+                    width: '24em',
+                    height: '7em',
+                    top: '59%',
+                    left: '54.5%'
+                },
+                extra: {},
+                info: `Jerusalem is conquered by the Muslims.`
+            },
+            {
+                id: 'Year998',
+                ss: {
+
+                    width: '24em',
+                    height: '14em',
+                    top: '67%',
+                    left: '77%'
+                },
+                extra: {},
+                info: `Prince Vladimir gets baptized and the entire state of Kievan Rus’ gets christianized. Byzantine missionaries that reached Kiev after Prince Vladimir’s initiative baptize the eastern	Slavic populations, predecessors of contemporary Russians, Ukrainians and Belorussians.`
+            },
+            {
+                id: 'Year1054',
+                css: {
+                    width: '18em',
+                    height: '6em',
+                    top: '24%',
+                    left: '81%'
+                },
+                extra: {},
+                info: `Eastern-Western Schism.`
+            },
+            {
+                id: 'Year1099',
+                css: {
+                    width: '28em',
+                    height: '8em',
+                    top: '6%',
+                    left: '84%'
+                },
+                extra: {},
+                info: `Conquest of Jerusalem after first Crusade.`
+            },
+            {
+                id: 'Year1100',
+                css: {
+                    width: '26em',
+                    height: '5em',
+                    top: '70%',
+                    left: '100%'
+                },
+                extra: {},
+                info: `Daniel the Traveler (monk from Kievan Rus’) journeys the Holy Land.`
+
+            },
+            {
+                id: 'Year1204',
+                css: {
+                    width: '24em',
+                    height: '14em',
+                    top: '9%',
+                    left: '110%'
+                },
+                extra: {},
+                info: `Conquest of Constantinople by the crusaders. Attempts to bridge the schism prove 	unsuccessful and following the fourth Crusade by the end of which the catholic crusaders ransacked Constantinople and dismantled the Byzantine Empire, it became impossible.`
+
+            },
+            {
+                id: 'Year1260',
+                css: {
+                    width: '30em',
+                    height: '17em',
+                    top: '62%',
+                    left: '124%'
+                },
+                extra: {},
+                info: `Jerusalem falls to the hands of the Mamelukes that occupied the land of Israel. During the first years of Mameluke rule, Jerusalem was a city of little strategic importance for the Mamelukes, as it was far from their Postal Road. The Mamelukes built in the city administration and religious constructions, as well as palaces and opulent buildings that were used as learning centers for the study of Koran scripts. It is during this period that Jerusalem’s status was fixated in Islamic conscience as a holy city, the third holiest after Mecca and Medina.`
+            },
+            {
+                id: 'Year1453',
+                css: {
+                    width: '18em',
+                    height: '14em',
+                    top: '8%',
+                    left: '132%'
+                },
+                extra: {},
+                info: `Conquest of Constantinople by the Ottomans. Subsequently, after the city’s fall, Moscow (led by Prince Ivan III) proclaims itself as the spiritual and cultural successor of Constantinople and was characterized as the “Third Rome”.`
+            },
+            {
+                id: 'Year1517',
+                css: {
+                    width: '23em',
+                    height: '7em',
+                    top: '23%',
+                    left: '149%'
+                },
+                extra: {},
+                info: `Mameluke rule in Jerusalem ends, beginning of Ottoman rule of the city.`
+
+            },
+            {
+                id: 'Year1542',
+                css: {
+                    width: '24em',
+                    height: '6em',
+                    top: '62%',
+                    left: '153%'
+                },
+                extra: {},
+                info: `Completion of Jerusalem’s wall construction by the Ottomans, the current Jerusalem wall.`
+
+            },
+            {
+                id: 'Year1551',
+                css: {
+                    width: '26em',
+                    height: '6em',
+                    top: '11%',
+                    left: '154%'
+                },
+                extra: {},
+                info: `Convention of the holy synod by the Russian church (Stoglavy Synod).`
+            },
+            {
+                id: 'Year1589',
+                css: {
+                    width: '24em',
+                    height: '14em',
+                    top: '0%',
+                    left: '3%'
+                },
+                extra: {},
+                info: `The Russian Church became autocephalous (the status of an independent Church/denomination in Orthodoxy that is not subject to external representation).`
+            },
+            {
+                id: 'Year1613',
+                css: {
+                    width: '20em',
+                    height: '5em',
+                    top: '73%',
+                    left: '167%'
+                },
+                extra: {},
+                info: `First Tsar from the House of Romanov.`
+
+            },
+            {
+                id: 'Year1672',
+                css: {
+                    width: '18em',
+                    height: '8em',
+                    top: '9%',
+                    left: '180%'
+                },
+                extra: {},
+                info: `The Synod of Jerusalem is carried out.`
+
+            },
+            {
+                id: 'Year1703',
+                css: {
+                    width: '18em',
+                    height: '7em',
+                    top: '61%',
+                    left: '180%'
+                },
+                extra: {},
+                info: `Russian Emperor Peter the Great establishes Saint-Peterburg and names it the new capital of the Empire.`
+
+            },
+            {
+                id: 'Year1762',
+                css: {
+
+                },
+                extra: {},
+                info: `Catherine the Great takes control of the throne of Russia.`
+
+            },
+            {
+                id: 'Year1860',
+                css: {
+
+                },
+                extra: {},
+                info: `Constructions outside Jerusalem’s walls begins, purchase of the Russian Compound, erection of Mishkenot Shaananim neighborhood – the first Jewish neighborhood beneath the city walls.`
+
+            },
+            {
+                id: 'Year1872',
+                css: {
+
+                },
+                extra: {},
+                info: `Completion of the construction of the Holy Trinity church.`
+
+            },
+            {
+                id: 'Year1882',
+                css: {
+
+                },
+                extra: {},
+                info: `IOPS is founded.`
+            },
+            {
+                id: 'Year1888',
+                css: {
+
+                },
+                extra: {},
+                info: `Completion of the construction of the Mary Magdalene church on the Mount of Olives. Prince Sergey Alexandrovic visits Jerusalem and the church.`
+
+            },
+            {
+                id: 'Year1914',
+                css: {
+
+                },
+                extra: {},
+                info: ` WWI.`
+
+            },
+            {
+                id: 'Year1917',
+                css: {
+
+                },
+                extra: {},
+                info: `Bolshevik revolution in Russia, separation of Russian Orthodox Church, end of monarchy.`
+
+            },
+        ]
+    }
 }
 export { englishText as default };
