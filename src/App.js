@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
+import { timer, removeTimer } from "./TimerHundler";
 import './css/App.css';
 import FrontPage from './pages/FrontPage';
 import ParticularInfo from './pages/ParticularInfo';
@@ -6,28 +7,42 @@ import LanguageDiv from './fragments/LanguageButtons';
 
 function App() {
 
-const [isFrontPage, setIsFrontPage] = useState(true);
-const [isParticularInfo, setIsParticularInfo] = useState(false);
-const [typeOfInfo, setTypeOfInfo]=useState('russianChurch');
+  const [isFrontPage, setIsFrontPage] = useState(true);
+  const [isParticularInfo, setIsParticularInfo] = useState(false);
+  const [typeOfInfo, setTypeOfInfo] = useState('russianChurch');
 
-const moveToParticularInfo =(e)=> {
+  useEffect(() => {
+    window.addEventListener("click", resetTimer);
 
-  if(e){
-    setTypeOfInfo(e.currentTarget.id);
-    setIsParticularInfo(true);
-    setIsFrontPage(false);
-  }  
-}
-const homeBtn =()=> {  
-  setIsFrontPage(true);
-  setIsParticularInfo(false);
-}
+    return () => {
+      window.removeEventListener("click", resetTimer);
+    };
+    // eslint-disable-next-line
+  }, []);
+
+  const resetTimer = () => {
+    removeTimer();
+    timer(homeBtn);
+  };
+
+  const moveToParticularInfo = (e) => {
+
+    if (e) {
+      setTypeOfInfo(e.currentTarget.id);
+      setIsParticularInfo(true);
+      setIsFrontPage(false);
+    }
+  }
+  const homeBtn = () => {
+    setIsFrontPage(true);
+    setIsParticularInfo(false);
+  }
 
   return (
     <>
       <LanguageDiv />
-      {isFrontPage?<FrontPage moveToParticularInfo={moveToParticularInfo}/>:null}
-      {isParticularInfo?<ParticularInfo typeOfInfo={typeOfInfo} homeBtnLogic={homeBtn}/>:null}
+      {isFrontPage ? <FrontPage moveToParticularInfo={moveToParticularInfo} /> : null}
+      {isParticularInfo ? <ParticularInfo typeOfInfo={typeOfInfo} homeBtnLogic={homeBtn} /> : null}
     </>
   );
 }

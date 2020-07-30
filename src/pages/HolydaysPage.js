@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import continueImg from '../assets/26-continue.png';
 import sundayPlamEN from '../assets/newHolydays/27-PalmSundayEN.png';
 import sundayPlamHE from '../assets/newHolydays/28-PalmSundayHE.png';
@@ -12,22 +12,10 @@ import tranformationEN from '../assets/newHolydays/40-TransfigurationEN.png';
 import tranformationHE from '../assets/newHolydays/41-TransfigurationHE.png';
 import isLeftToRight from '../fragments/IsLeftToRightFunc';
 import TextInserterHolydays from '../textInserters/TextInserterHolydays';
-import { timer, removeTimer } from '../TimerHundler';
 import '../css/App.css';
 import HomeBtn from '../fragments/HomeBtn';
 
 function HolydaysPage({ homeBtnLogic }) {
-
-    useEffect(
-        () => {
-            timer(homeBtnLogic);
-
-            return () => { // Return callback to run on unmount.
-
-                removeTimer();
-            };
-            // eslint-disable-next-line react-hooks/exhaustive-deps
-        }, []);
 
     const [typeOfInfo, setTypeOfInfo] = useState(0);
     const moveFoword = useRef(null);

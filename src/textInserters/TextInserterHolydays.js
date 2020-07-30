@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext } from 'react';
 import isLeftToRight from '../fragments/IsLeftToRightFunc';
 import LangContext from '../ChurchContext';
 import russianText from './RussianText';
@@ -11,7 +11,6 @@ function TextInserterHolydays({ typeOfInfo }) {
 
     const lang = useContext(LangContext).lang;
     const holyday = setHolyday();
-    const textParaEl = useRef(null);
 
     function createMarkup(str) { return { __html: str } };
 
@@ -56,7 +55,7 @@ function TextInserterHolydays({ typeOfInfo }) {
     return (
         <div className={isLeftToRight() ? 'textBoxCss' : 'holydays-text-box-heb'}>
             <HolydayTitle titleToInsert={titleToInsert()} />
-            <p ref={textParaEl} className={isLeftToRight() ? 'crossesParaEN' : 'crossesParaHE'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(infoToInsert())}>
+            <p className={isLeftToRight() ? 'crossesParaEN' : 'crossesParaHE'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(infoToInsert())}>
             </p>
         </div>
     );

@@ -1,15 +1,27 @@
 import haloCross from "../assets/43-haloWithGreek.jpg";
 import alpaOmaga from "../assets/45-zaiRho.png";
 import ippoCross from "../assets/44-ippoCross.png";
+import jeruCrossImg from "../assets/croos_pic4.png";
 const englishText = {
 
     id: "englishText",
     titles: {
-        russianChurch: "The Russian Church",
-        holyFire: "The Holy Fire",
+        russianChurch: {
+            text: "The Russian Church",
+            extraCss: {
+                width: "505px",
+                height: "12px"
+            }
+        },
+        holyFire: {
+            text: "The Holy Fire",
+            extraCss: {
+            }
+        },
         holydays: "The Holidays of the Eastern Orthodox Church",
         crosses: "православных крестов",
-        timeLine: "христианская хронология"
+        timeLine: "христианская хронология",
+
     },
     particularInfo: {
         russianChurch: `According to the tradition of the Eastern Churches (Orthodox – straight faith), they were founded by St. Andrew, one of the twelve apostles, during his visit at Scythia – a region that belonged to the Byzantine Empire, contemporary Eastern Europe.
@@ -66,7 +78,18 @@ The ceremony and its exact details solidified gradually over time, and a descrip
         byzCross: `a cross with widened edges that was in commonplace use in the Early Byzantine Empire, which existed for over a thousand years and greatly influenced the course of history in the eastern Mediterranean and southern Europe, as well as contributed to the shaping of the essence in eastern Europe. Orthodox Christianity, which flourished in various regions of eastern Europe was deeply influenced by the Byzantine rite.`,
         russianCross: `symbol of the Russian Orthodox Church, whose origins are traced in 	the Byzantine Empire circa the 6th century. The upper horizontal line stands for the inscription above the cross on which Jesus was crucified written in Hebrew, Greek and Latin “Jesus the Nazarene, King of the Jews”. The lower diagonal line symbolizes good and evil. The upward part of this line represents, according to tradition, the “penitent thief” St. Dismas, who was crucified on Jesus’ right and confessed his sins. The downward part symbolizes the “impenitent thief” Gestas, who was crucified on Jesus’ left and did not confess his sins.`,
         jeruCross: ` also called “five-fold cross”, it consists of a large cross potent in the center surrounded by four smaller Greek crosses, one in each quadrant. This cross was used as the emblem of the Crusader Kingdom of Jerusalem since 1280. The five crosses represent the “Five Wounds of Christ” (one for each piercing wound Jesus suffered during the crucifixion). The four edges symbolize the four corners of the world. Today this cross is used by the Order of the Holy Sepulchre and appears in numerous places in the Christian world.
-        The symbol of IOPS combines the chi-rho christogram together with alpha and omega with direct reference to the Greek cross and indirect reference to the Jerusalem cross.`,
+        The symbol of IOPS combines the chi-rho christogram together with alpha and omega with direct reference to the Greek cross and indirect reference to the Jerusalem cross.
+        <div class="jeru-cross-pic-container">
+            <img
+            src=${jeruCrossImg}
+            alt="humanitarian buildings"
+            class="jeru-cross-en"
+            /> 
+            <div class="jeru-cross-pi-text"> Godfrey of Bouillon - one of the pre-eminent leaders of the First Crusade. He was the first ruler of the Kingdom of Jerusalem from 1099 to 1100. He apparently avoided using the title of king.
+            </div>
+        </div> 
+        <div class="sec-jeru-cross-text">Some believe Godfrey Thousand years old sword was found and it is being exhibited in the church of holy spechular.</div>`,
+
         CRCross: `Chi Rho – one of the earliest forms of a christogram – a monogram related to Christianity. It is formed by the combination of the Greek letters chi (X) and rho (P) from the Greek word ΧΡΙΣΤΟΣ (Christos) – Jesus Christ. The symbol of chi rho was extensively used by the founder of the Byzantine Empire, Roman Caesar Constantine, waving in the sky upon his armies’ flags and was gradually preserved as a Christian emblem.
         Chi Rho with Alpha and Omega – Alpha, the first letter of the Greek alphabet and omega the last. As noted in the Book of Revelation, Jesus’ voice is heard by John after Jesus’ death, while he spreads Jesus’ doctrine on the island of Patmos. And as the verse from the Book of Revelation says “I am the Alpha and Omega”.
 

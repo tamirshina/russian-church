@@ -42,7 +42,11 @@ function TextInserterParticular({ typeOfInfo, homeBtnLogic }) {
 
     function titleToInsert() {
 
-        return whichFileToUse().titles[typeOfInfo];
+        return whichFileToUse().titles[typeOfInfo].text;
+    }
+    function cssToInsert() {
+
+        return whichFileToUse().titles[typeOfInfo].extraCss;
     }
     const scrollAndUpdateDown = () => {
 
@@ -59,7 +63,7 @@ function TextInserterParticular({ typeOfInfo, homeBtnLogic }) {
 
         <div>
             {isLeftToRight() ?
-                <LeftToRightTitle titleToInsert={titleToInsert()} /> :
+                <LeftToRightTitle titleToInsert={titleToInsert()} cssToInsert={cssToInsert()} /> :
                 <RighToLeftTitle titleToInsert={titleToInsert()} />}
             <p ref={textParaEl} className={isLeftToRight() ? 'infoEnText' : 'textCss'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(infoToInsert())}>
             </p>

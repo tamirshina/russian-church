@@ -73,6 +73,7 @@
     line-height: 1.6;
 	overflow: scroll;
 	white-space: pre-line;
+	height: 620px;
 }
 .crossesParaHE{
 	line-height: 1.6;
@@ -93,4 +94,20 @@
 }
 .crossesHeUnderline{
 	margin-left: 26%;
+}
+.jeru-cross-en{
+	position: relative;
+	top: -50px;
+	left: -78px;
+}
+.jeru-cross-pic-container{
+	display: flex;
+}
+.jeru-cross-pi-text{
+	position: relative;
+	top: 85px;
+	right:74px;
+}
+.sec-jeru-cross-text{
+	margin-top: -50px;
 }

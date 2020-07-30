@@ -8,24 +8,11 @@ import englishText from "../textInserters/EnglishText";
 import hebrewText from "../textInserters/HebrewText";
 import HomeBtn from '../fragments/HomeBtn';
 import TimelineBox from '../fragments/TimelineBox';
-import { timer, removeTimer } from '../TimerHundler';
 import '../css/App.css';
 
 function TimelinePage({ homeBtnLogic }) {
 
   const { lang } = useContext(LangContext);
-
-  useEffect(
-    () => {
-
-      timer(homeBtnLogic);
-
-      return () => { // Return callback to run on unmount.
-
-        removeTimer();
-      };
-
-    }, [lang, homeBtnLogic]);
 
   function whichFileToUse() {
     if (lang === "hebrew") {

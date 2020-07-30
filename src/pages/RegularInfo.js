@@ -1,26 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import russianChurchEN from '../assets/08-russianMaceiaEN.png';
 import russianChurchHe from '../assets/07-russian MaceiaHE.png';
 import holyFireImageEN from '../assets/13-holyFireEN.png';
 import holyFireImageHe from '../assets/12-holyFireHE.png';
 import isLeftToRight from '../fragments/IsLeftToRightFunc';
 import TextInserter from '../textInserters/TextInserterParticular';
-import { timer, removeTimer } from '../TimerHundler';
 import '../css/App.css';
 import HomeBtn from '../fragments/HomeBtn';
 
 function RegularInfo({ typeOfInfo, homeBtnLogic }) {
-
-  useEffect(
-    () => {
-      timer(homeBtnLogic);
-
-      return () => { // Return callback to run on unmount.
-
-        removeTimer();
-      };
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
 
   function pictureToRender() {
 

@@ -4,9 +4,11 @@ export function timer(homeBtnLogic) {
 
   myFunc = window.setInterval(() => {
     homeBtnLogic();
-  }, 3000000);
+  }, 3180000);
+  console.log("on");
 }
 export function removeTimer() {
 
   window.clearInterval(myFunc);
+  console.log("off");
 }
