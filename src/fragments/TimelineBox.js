@@ -5,6 +5,8 @@ import "../css/App.css";
 function JerusalemBox({
     infoToInsert,
     cssForText,
+    titleToInseret,
+    textStyle,
     id
 }) {
 
@@ -23,8 +25,9 @@ function JerusalemBox({
 
     return (
         <>
-            <div className={isRightToLeft() ? "text-jeru-box margin-add-right" : "text-jeru-box margin-add-left"} style={cssForText} key={id} id={id}>
-                <p dangerouslySetInnerHTML={createMarkup(infoToInsert)} className={isRightToLeft() ? "text-box-heb" : null} />
+            <div className={isRightToLeft() ? "text-jeru-box margin-add-right" : "text-jeru-box timeline-box-style"} style={cssForText} key={id} id={id}>
+                <div dangerouslySetInnerHTML={createMarkup(titleToInseret)} className={isRightToLeft() ? 'text-box-heb timeline-title-style' : 'timeline-title-style'} />
+                <p dangerouslySetInnerHTML={createMarkup(infoToInsert)} className={isRightToLeft() ? "text-box-heb" : 'margins-timeline-text'} style={textStyle} />
             </div>
         </>
     );

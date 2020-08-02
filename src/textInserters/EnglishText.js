@@ -144,55 +144,88 @@ The ceremony and its exact details solidified gradually over time, and a descrip
     timelinePage: {
         itemsArray: [
             {
+                id: 'year0',
+                css: {
+                    width: '13em',
+                    height: '4em',
+                    top: '23.5%',
+                    left: '9%',
+                },
+                title: 'Jesus’s birth',
+                info: ""
+            },
+            {
                 id: 'year33',
                 css: {
-                    width: '32em',
+                    width: '30em',
                     height: '14em',
-                    top: '62%',
-                    left: '3%'
+                    top: '65%',
+                    left: '5%'
                 },
-                extra: {},
-                info: `Jesus’s crucifixion. Pontius Pilatus was governor of Judea between 26 CE to 36 CE. According to the New Testament Pilatus supervised Jesus’s trial and was the one to order his crucifixion.`
+                title: 'Jesus’s crucifixion',
+                info: `Pontius Pilatus was governor of Judea between 26 CE to 36 CE. According to the New Testament Pilatus supervised Jesus’s trial and was the one to order his crucifixion.`
+            },
+            {
+                id: 'year312',
+                css: {
+                    width: '304px',
+                    height: '249px',
+                    top: '73%',
+                    left: '34.5%'
+                },
+                textStyle: {
+                    height: '86px',
+                    overflow: 'scroll'
+                },
+                title: `Constantine's dream`,
+                info: `The night before the critical battle between the future Caesar, Constantine, and the current Roman Caesar, Maxentius, on the Milvian bridge Constantine experiences a divine revelation. As far as the revelation itself is concerned, several versions describing it exist. One of them claims that Constantine dreams of being instructed to inscribe his soldiers' shields with the symbol "X combined with a vertical line spiraling in its upper part" standing for Jesus Christ (chi - χ & ro - ρ). Constantine and his armies achieved a triumphant victory in this battle.
+                There is a general consensus among researchers that this event prompted Constantine to embrace Christianity. Thus, this battle is considered as a turning point in the history of the expansion of Christianity in Europe.`
             },
             {
                 id: 'year313',
                 css: {
                     width: '265px',
                     height: '249px',
-                    top: '8%',
-                    left: '25.5%'
-                }, extra: {},
-                info: `The Edict of Milan (Edictum Mediolanense) ratifies Christianity as a permitted religion.`
+                    top: '12%',
+                    left: '29.5%'
+                },
+                title: 'The Edict of Milan',
+                info: `Edictum Mediolanense, ratifies Christianity as a permitted religion across the Roman empire.`
             },
             {
                 id: 'year325',
                 css: {
                     width: '21em',
                     height: '297px',
-                    top: '5%',
-                    left: '42%'
+                    top: '6%',
+                    left: '45.5%'
                 },
-                extra: {},
-                info: `Council of Nicaea, the first ecumenical (worldwide) council of Christian leaders. The council was convened in the city of Nicaea in Asia Minor after Roman Emperor Constantine’s initiative in order to reach a consensus and set uniform standards concerning Christianity and christian faith, which was already quite prominent. During the council the christian doctrine was initially formed; among others the Nicene Creed and the observance date of Easter.`
+                textStyle: {
+                    fontSize: '15px'
+                },
+                title: 'Council of Nicaea',
+                info: `The first ecumenical (worldwide) council of Christian leaders. The council was convened in the city of Nicaea in Asia Minor after Roman Emperor Constantine’s initiative in order to reach a consensus and set uniform standards concerning Christianity and christian faith, which was already quite prominent. During the council the christian doctrine was initially formed; among others the Nicene Creed and the observance date of Easter.`
             },
             {
                 id: 'year330',
                 css: {
                     width: '19em',
-                    height: '17em',
-                    top: '63%',
-                    left: '33%'
+                    height: '8em',
+                    top: '59%',
+                    left: '41%'
                 },
-                extra: {},
-                info: `Establishment of the “second Rome” by the Roman Emperor Constantine and its 	appointment as the capital of the East Roman Empire – Constantinople.`
+                textStyle: {
+                    fontSize: '16px'
+                },
+                info: `Establishment of the “second Rome” by the Roman Emperor Constantine and its 	appointment as the capital of the East Roman Empire – <b>Constantinople</b>.`
             },
             {
                 id: 'Year335',
                 css: {
                     width: '17em',
                     height: '6em',
-                    top: '7%',
-                    left: '62%'
+                    top: '9%',
+                    left: '65.5%'
                 },
                 extra: {},
                 info: `Erection of the Church of the Holy Sepulchre.`
@@ -200,22 +233,23 @@ The ceremony and its exact details solidified gradually over time, and a descrip
             {
                 id: 'Year638',
                 css: {
-                    width: '24em',
+                    width: '20em',
                     height: '7em',
-                    top: '59%',
-                    left: '54.5%'
+                    top: '61%',
+                    left: '61.5%'
                 },
-                extra: {},
+                textStyle: {
+                    fontSize: '22px'
+                },
                 info: `Jerusalem is conquered by the Muslims.`
             },
             {
                 id: 'Year998',
-                ss: {
-
+                css: {
                     width: '24em',
                     height: '14em',
                     top: '67%',
-                    left: '77%'
+                    left: '80.3%'
                 },
                 extra: {},
                 info: `Prince Vladimir gets baptized and the entire state of Kievan Rus’ gets christianized. Byzantine missionaries that reached Kiev after Prince Vladimir’s initiative baptize the eastern	Slavic populations, predecessors of contemporary Russians, Ukrainians and Belorussians.`
@@ -225,30 +259,34 @@ The ceremony and its exact details solidified gradually over time, and a descrip
                 css: {
                     width: '18em',
                     height: '6em',
-                    top: '24%',
-                    left: '81%'
+                    top: '27%',
+                    left: '85%'
                 },
-                extra: {},
-                info: `Eastern-Western Schism.`
+                textStyle: {
+                    fontSize: '22px'
+                },
+                info: `Eastern-Western Schism`
             },
             {
                 id: 'Year1099',
                 css: {
-                    width: '28em',
+                    width: '29em',
                     height: '8em',
-                    top: '6%',
-                    left: '84%'
+                    top: '10%',
+                    left: '87.5%'
                 },
-                extra: {},
-                info: `Conquest of Jerusalem after first Crusade.`
+                textStyle: {
+                    fontSize: '22px'
+                },
+                info: `Conquest of Jerusalem after first Crusade`
             },
             {
                 id: 'Year1100',
                 css: {
-                    width: '26em',
+                    width: '23em',
                     height: '5em',
-                    top: '70%',
-                    left: '100%'
+                    top: '71%',
+                    left: '105%'
                 },
                 extra: {},
                 info: `Daniel the Traveler (monk from Kievan Rus’) journeys the Holy Land.`
@@ -259,11 +297,12 @@ The ceremony and its exact details solidified gradually over time, and a descrip
                 css: {
                     width: '24em',
                     height: '14em',
-                    top: '9%',
-                    left: '110%'
+                    top: '13%',
+                    left: '113%'
                 },
                 extra: {},
-                info: `Conquest of Constantinople by the crusaders. Attempts to bridge the schism prove 	unsuccessful and following the fourth Crusade by the end of which the catholic crusaders ransacked Constantinople and dismantled the Byzantine Empire, it became impossible.`
+                title: 'Conquest of Constantinople',
+                info: `By the crusaders, attempts to bridge the schism prove unsuccessful and following the fourth Crusade by the end of which the catholic crusaders ransacked Constantinople and dismantled the Byzantine Empire, it became impossible.`
 
             },
             {
@@ -271,8 +310,8 @@ The ceremony and its exact details solidified gradually over time, and a descrip
                 css: {
                     width: '30em',
                     height: '17em',
-                    top: '62%',
-                    left: '124%'
+                    top: '63%',
+                    left: '128%'
                 },
                 extra: {},
                 info: `Jerusalem falls to the hands of the Mamelukes that occupied the land of Israel. During the first years of Mameluke rule, Jerusalem was a city of little strategic importance for the Mamelukes, as it was far from their Postal Road. The Mamelukes built in the city administration and religious constructions, as well as palaces and opulent buildings that were used as learning centers for the study of Koran scripts. It is during this period that Jerusalem’s status was fixated in Islamic conscience as a holy city, the third holiest after Mecca and Medina.`
@@ -282,22 +321,29 @@ The ceremony and its exact details solidified gradually over time, and a descrip
                 css: {
                     width: '18em',
                     height: '14em',
-                    top: '8%',
-                    left: '132%'
+                    top: '9%',
+                    left: '135.6%'
                 },
-                extra: {},
-                info: `Conquest of Constantinople by the Ottomans. Subsequently, after the city’s fall, Moscow (led by Prince Ivan III) proclaims itself as the spiritual and cultural successor of Constantinople and was characterized as the “Third Rome”.`
+                textStyle: {
+                    fontSize: '15px'
+                },
+                title: 'Conquest of Constantinople',
+                info: `By the Ottomans subsequently, after the city’s fall, Moscow proclaims itself as the spiritual and cultural successor of Constantinople and was characterized as the “Third Rome”.`
             },
             {
                 id: 'Year1517',
                 css: {
                     width: '23em',
                     height: '7em',
-                    top: '23%',
-                    left: '149%'
+                    top: '23.5%',
+                    left: '152.5%'
                 },
-                extra: {},
-                info: `Mameluke rule in Jerusalem ends, beginning of Ottoman rule of the city.`
+                textStyle: {
+                    marginTop: '0',
+                    fontSize: '17px'
+                },
+                title: 'Mameluke rule in Jerusalem ends',
+                info: `Beginning of Ottoman rule of the city.`
 
             },
             {
@@ -306,10 +352,10 @@ The ceremony and its exact details solidified gradually over time, and a descrip
                     width: '24em',
                     height: '6em',
                     top: '62%',
-                    left: '153%'
+                    left: '156%'
                 },
-                extra: {},
-                info: `Completion of Jerusalem’s wall construction by the Ottomans, the current Jerusalem wall.`
+                title: '',
+                info: `<div style='font-size:25px'>Completion of Jerusalem’s wall</div><div>Construction by the Ottomans, the current Jerusalem wall.</div>`
 
             },
             {
@@ -317,30 +363,30 @@ The ceremony and its exact details solidified gradually over time, and a descrip
                 css: {
                     width: '26em',
                     height: '6em',
-                    top: '11%',
-                    left: '154%'
+                    top: '13%',
+                    left: '157.5%'
                 },
                 extra: {},
                 info: `Convention of the holy synod by the Russian church (Stoglavy Synod).`
             },
-            {
-                id: 'Year1589',
-                css: {
-                    width: '24em',
-                    height: '14em',
-                    top: '0%',
-                    left: '3%'
-                },
-                extra: {},
-                info: `The Russian Church became autocephalous (the status of an independent Church/denomination in Orthodoxy that is not subject to external representation).`
-            },
+            // {
+            //     id: 'Year1589',
+            //     css: {
+            //         width: '24em',
+            //         height: '14em',
+            //         top: '0%',
+            //         left: '3%'
+            //     },
+            //     extra: {},
+            //     info: `The Russian Church became autocephalous (the status of an independent Church/denomination in Orthodoxy that is not subject to external representation).`
+            // },
             {
                 id: 'Year1613',
                 css: {
                     width: '20em',
                     height: '5em',
-                    top: '73%',
-                    left: '167%'
+                    top: '74%',
+                    left: '172%'
                 },
                 extra: {},
                 info: `First Tsar from the House of Romanov.`
@@ -351,11 +397,11 @@ The ceremony and its exact details solidified gradually over time, and a descrip
                 css: {
                     width: '18em',
                     height: '8em',
-                    top: '9%',
-                    left: '180%'
+                    top: '12%',
+                    left: '185%'
                 },
-                extra: {},
-                info: `The Synod of Jerusalem is carried out.`
+                title: '',
+                info: `The Synod of Jerusalem is carried out`
 
             },
             {
@@ -364,34 +410,46 @@ The ceremony and its exact details solidified gradually over time, and a descrip
                     width: '18em',
                     height: '7em',
                     top: '61%',
-                    left: '180%'
+                    left: '184%'
                 },
                 extra: {},
                 info: `Russian Emperor Peter the Great establishes Saint-Peterburg and names it the new capital of the Empire.`
 
             },
             {
-                id: 'Year1762',
+                id: 'Year1721',
                 css: {
-
+                    width: '15em',
+                    height: '7em',
+                    top: '25%',
+                    left: '194%'
                 },
-                extra: {},
-                info: `Catherine the Great takes control of the throne of Russia.`
-
+                textStyle: {
+                    fontSize: '15px'
+                },
+                info: `Peter the Great eliminates the role of the Patriarch of Russia once and for all and appoints the members of the Holy Synod, thus subordinating the Church to the Tsar.`
             },
             {
                 id: 'Year1860',
                 css: {
-
+                    width: '21em',
+                    height: '7em',
+                    top: '5%',
+                    left: '201.5%'
                 },
-                extra: {},
+                textStyle: {
+                    fontSize: '17px'
+                },
                 info: `Constructions outside Jerusalem’s walls begins, purchase of the Russian Compound, erection of Mishkenot Shaananim neighborhood – the first Jewish neighborhood beneath the city walls.`
 
             },
             {
                 id: 'Year1872',
                 css: {
-
+                    width: '18em',
+                    height: '7em',
+                    top: '62%',
+                    left: '204%'
                 },
                 extra: {},
                 info: `Completion of the construction of the Holy Trinity church.`
@@ -400,15 +458,21 @@ The ceremony and its exact details solidified gradually over time, and a descrip
             {
                 id: 'Year1882',
                 css: {
-
+                    width: '18em',
+                    height: '7em',
+                    top: '25%',
+                    left: '224%'
                 },
-                extra: {},
-                info: `IOPS is founded.`
+                title: `IOPS is founded`,
+                info: ''
             },
             {
                 id: 'Year1888',
                 css: {
-
+                    width: '19em',
+                    height: '7em',
+                    top: '79%',
+                    left: '220.5%'
                 },
                 extra: {},
                 info: `Completion of the construction of the Mary Magdalene church on the Mount of Olives. Prince Sergey Alexandrovic visits Jerusalem and the church.`
@@ -417,16 +481,22 @@ The ceremony and its exact details solidified gradually over time, and a descrip
             {
                 id: 'Year1914',
                 css: {
-
+                    width: '18em',
+                    height: '7em',
+                    top: '10%',
+                    left: '235%'
                 },
-                extra: {},
-                info: ` WWI.`
+                title: `WWI`,
+                info: ``
 
             },
             {
                 id: 'Year1917',
                 css: {
-
+                    width: '14em',
+                    height: '7em',
+                    top: '67%',
+                    left: '239.5%'
                 },
                 extra: {},
                 info: `Bolshevik revolution in Russia, separation of Russian Orthodox Church, end of monarchy.`

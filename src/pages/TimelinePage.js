@@ -1,8 +1,6 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 import LangContext from '../ChurchContext';
-import heTimeline from '../assets/09-timeline.png';
-import enTimeline from '../assets/09-timeline.png';
-import ruTimeline from '../assets/09-timeline.png';
+import timelineBackground from '../assets/timeline-new.png';
 import russianText from "../textInserters/RussianText";
 import englishText from "../textInserters/EnglishText";
 import hebrewText from "../textInserters/HebrewText";
@@ -25,27 +23,18 @@ function TimelinePage({ homeBtnLogic }) {
     }
   }
 
-  function pictureToRender() {
-
-    switch (lang) {
-      case "english":
-        return enTimeline;
-      case ("hebrew"):
-        return heTimeline;
-      default:
-        return ruTimeline;
-    }
-  }
 
   return (
     <>
-      <img id='timelineBackground' src={pictureToRender()} alt='backgroundImage' className='particularBackGround'></img>
+      <img id='timelineBackground' src={timelineBackground} alt='backgroundImage' className='particularBackGround'></img>
       {whichFileToUse().map((item) => {
         return (
           <TimelineBox
             key={item.id}
             infoToInsert={item.info}
             cssForText={item.css}
+            titleToInseret={item.title}
+            textStyle={item.textStyle}
             id={item.id}
           />
         );
