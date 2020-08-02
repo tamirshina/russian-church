@@ -284,7 +284,7 @@ const russianText = {
                 css: {
                     width: '29em',
                     height: '8em',
-                    top: '10%',
+                    top: '8.5%',
                     left: '87.5%'
                 },
                 textStyle: {
@@ -464,10 +464,12 @@ const russianText = {
                 css: {
                     width: '18em',
                     height: '7em',
-                    top: '62%',
-                    left: '204%'
+                    top: '60.5%',
+                    left: '204.5%'
                 },
-                extra: {},
+                textStyle: {
+                    fontSize: '24px'
+                },
                 info: `Завершение строительства Троицкого Собора в Иерусалиме.`
 
             },

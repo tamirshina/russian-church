@@ -239,7 +239,7 @@ The ceremony and its exact details solidified gradually over time, and a descrip
                     left: '61.5%'
                 },
                 textStyle: {
-                    fontSize: '22px'
+                    fontSize: '24px'
                 },
                 info: `Jerusalem is conquered by the Muslims.`
             },
@@ -483,7 +483,7 @@ The ceremony and its exact details solidified gradually over time, and a descrip
                 css: {
                     width: '18em',
                     height: '7em',
-                    top: '10%',
+                    top: '10.5%',
                     left: '235%'
                 },
                 title: `WWI`,
