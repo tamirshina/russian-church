@@ -235,7 +235,7 @@ const hebrewText = {
                 id: 'year330',
                 css: {
                     width: '19em',
-                    height: '17em',
+                    height: '8em',
                     top: '58%',
                     left: '39.5%'
                 },
