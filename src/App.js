@@ -13,6 +13,7 @@ function App() {
 
   useEffect(() => {
     window.addEventListener("click", resetTimer);
+    window.addEventListener('contextmenu', blockContextMenu);
 
     return () => {
       window.removeEventListener("click", resetTimer);
@@ -23,6 +24,10 @@ function App() {
   const resetTimer = () => {
     removeTimer();
     timer(homeBtn);
+  };
+
+  const blockContextMenu = (evt) => {
+    evt.preventDefault();
   };
 
   const moveToParticularInfo = (e) => {
