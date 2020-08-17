@@ -73,7 +73,7 @@
     line-height: 1.6;
 	overflow: scroll;
 	white-space: pre-line;
-	height: 620px;
+	height: 582px;
 }
 .crossesParaHE{
 	line-height: 1.6;
@@ -81,6 +81,7 @@
     overflow: scroll;
     font-family: Papyrus;
 	white-space: pre-line;
+	height: 590px;
 }
 .crossesTitleHE{
 	position: fixed;
@@ -100,14 +101,29 @@
 	top: -50px;
 	left: -78px;
 }
+.jeru-cross-heb{
+	position: relative;
+	top: -50px;
+	left: 77px;
+}
 .jeru-cross-pic-container{
 	display: flex;
+	width: 690px
 }
 .jeru-cross-pi-text{
 	position: relative;
 	top: 85px;
 	right:74px;
 }
+.jeru-cross-pi-text-heb{
+	position: relative;
+	top: 26px;
+	right:-117px;
+}
 .sec-jeru-cross-text{
 	margin-top: -50px;
+}
+
+.sec-jeru-cross-text-heb{
+	margin-top: -104px;
 }
