@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     window.addEventListener("click", resetTimer);
-    //window.addEventListener('contextmenu', blockContextMenu);
+    window.addEventListener('contextmenu', blockContextMenu);
 
     return () => {
       window.removeEventListener("click", resetTimer);
